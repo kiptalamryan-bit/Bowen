@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b12" />
+    <title>Kivora — Move money with clarity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-row">
+          <a class="brand" href="#overview" aria-label="Kivora home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 40 40" role="img"><path d="M10 8v24M10 20 29 8M10 20l19 12"/><path class="mark-accent" d="M21 20h10"/></svg>
+            </span>
+            <span>Kivora</span>
+          </a>
+          <button class="icon-button mobile-close" id="closeSidebar" aria-label="Close navigation">×</button>
+        </div>
+
+        <div class="workspace-switcher">
+          <span class="avatar avatar-blue">K</span>
+          <span><strong>Kivora Labs</strong><small>Business account</small></span>
+          <span class="chevron">⌄</span>
+        </div>
+
+        <nav class="nav-list" aria-label="Primary navigation">
+          <p class="eyebrow">Workspace</p>
+          <a class="nav-item active" href="#overview" data-section="overview"><span class="nav-icon">⌂</span> Overview</a>
+          <a class="nav-item" href="#payments" data-section="payments"><span class="nav-icon">↗</span> Payments <span class="nav-count">24</span></a>
+          <a class="nav-item" href="#payouts" data-section="payouts"><span class="nav-icon">⇄</span> Payouts</a>
+          <a class="nav-item" href="#customers" data-section="customers"><span class="nav-icon">◌</span> Customers</a>
+          <a class="nav-item" href="#analytics" data-section="analytics"><span class="nav-icon">⌁</span> Analytics</a>
+          <p class="eyebrow nav-lower">Manage</p>
+          <a class="nav-item" href="#settings" data-section="settings"><span class="nav-icon">⚙</span> Settings</a>
+          <a class="nav-item" href="#developers" data-section="developers"><span class="nav-icon">{ }</span> Developers</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="support-card"><span class="support-icon">✦</span><div><strong>Need a hand?</strong><small>Talk to our team</small></div><span>↗</span></div>
+          <div class="profile-row"><span class="avatar avatar-purple">AM</span><span><strong>Alex Morgan</strong><small>Admin</small></span><span class="more">•••</span></div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="overview">
+        <header class="topbar">
+          <button class="icon-button menu-button" id="openSidebar" aria-label="Open navigation">☰</button>
+          <div class="breadcrumb"><span>Workspace</span><span class="slash">/</span><strong id="pageTitle">Overview</strong></div>
+          <div class="top-actions">
+            <button class="search-button" id="searchButton"><span>⌕</span><span>Search anything</span><kbd>⌘ K</kbd></button>
+            <button class="icon-button notification-button" aria-label="Notifications"><span class="notification-dot"></span>♧</button>
+            <button class="icon-button help-button" aria-label="Help">?</button>
+          </div>
+        </header>
+
+        <section class="page-content">
+          <div class="page-heading reveal">
+            <div><p class="eyebrow">Monday, October 12, 2026</p><h1>Good morning, Alex <span class="wave">✦</span></h1><p class="muted">Here’s what’s moving across your business today.</p></div>
+            <div class="heading-actions"><button class="button button-ghost" id="exportButton">⇩ <span>Export</span></button><button class="button button-primary" id="newPayment">＋ New payment</button></div>
+          </div>
+
+          <div class="metric-grid reveal">
+            <article class="glass-card metric-card featured"><div class="metric-top"><span class="metric-label">Available balance</span><button class="card-menu">•••</button></div><div class="metric-value">$128,430<span class="decimal">.82</span></div><div class="metric-footer"><span class="trend positive">↗ 12.8%</span><span class="metric-note">vs. last month</span><span class="mini-sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></article>
+            <article class="glass-card metric-card"><div class="metric-top"><span class="metric-label">Total volume</span><span class="metric-badge">This month</span></div><div class="metric-value">$384,291<span class="decimal">.40</span></div><div class="metric-footer"><span class="trend positive">↗ 8.4%</span><span class="metric-note">vs. last month</span><span class="bar-sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></article>
+            <article class="glass-card metric-card"><div class="metric-top"><span class="metric-label">Successful payments</span><span class="metric-badge green">98.2%</span></div><div class="metric-value">12,849</div><div class="metric-footer"><span class="trend positive">↗ 4.1%</span><span class="metric-note">1,204 this week</span><div class="ring-progress"><svg viewBox="0 0 36 36"><path class="ring-bg" d="M18 2.084a15.916 15.916 0 1 1 0 31.832a15.916 15.916 0 1 1 0-31.832"/><path class="ring-value" pathLength="100" d="M18 2.084a15.916 15.916 0 1 1 0 31.832a15.916 15.916 0 1 1 0-31.832"/></svg></div></div></article>
+            <article class="glass-card metric-card"><div class="metric-top"><span class="metric-label">Pending payouts</span><span class="metric-badge amber">3 pending</span></div><div class="metric-value">$24,600<span class="decimal">.00</span></div><div class="metric-footer"><span class="trend neutral">→ 0.0%</span><span class="metric-note">Next payout in 2 days</span><span class="payout-dots"><i></i><i></i><i></i></span></div></article>
+          </div>
+
+          <div class="dashboard-grid reveal">
+            <section class="glass-card chart-card"><div class="section-head"><div><h2>Revenue overview</h2><p class="muted">Track your volume over time</p></div><div class="chart-controls"><button class="period active">30D</button><button class="period">90D</button><button class="period">1Y</button><button class="icon-button chart-filter">⌄</button></div></div><div class="chart-wrap"><div class="y-labels"><span>$160k</span><span>$120k</span><span>$80k</span><span>$40k</span><span>$0</span></div><svg class="revenue-chart" viewBox="0 0 760 270" preserveAspectRatio="none" aria-label="Revenue chart"><defs><linearGradient id="areaGradient" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#48a8ff" stop-opacity=".28"/><stop offset="100%" stop-color="#48a8ff" stop-opacity="0"/></linearGradient></defs><g class="grid-lines"><path d="M0 20H760M0 78H760M0 136H760M0 194H760M0 252H760"/></g><path class="area-path" d="M0 220 C50 210, 56 180, 92 193 S150 210, 190 160 S244 130, 276 154 S325 182, 364 126 S420 140, 454 92 S510 76, 548 105 S600 132, 630 75 S680 52, 710 70 S740 42, 760 54 V270 H0 Z"/><path class="line-path" d="M0 220 C50 210, 56 180, 92 193 S150 210, 190 160 S244 130, 276 154 S325 182, 364 126 S420 140, 454 92 S510 76, 548 105 S600 132, 630 75 S680 52, 710 70 S740 42, 760 54"/><circle cx="630" cy="75" r="5" class="chart-dot"/><circle cx="630" cy="75" r="11" class="chart-dot-ring"/></svg><div class="x-labels"><span>Sep 13</span><span>Sep 18</span><span>Sep 23</span><span>Sep 28</span><span>Oct 03</span><span>Oct 08</span><span>Oct 12</span></div></div><div class="chart-tooltip"><strong>$143,210.60</strong><span>October 8, 2026</span></div></section>
+            <section class="glass-card methods-card"><div class="section-head"><div><h2>Payment methods</h2><p class="muted">Where your money comes from</p></div><button class="card-menu">•••</button></div><div class="donut-wrap"><div class="donut"><div class="donut-center"><strong>12,849</strong><span>payments</span></div></div><div class="method-legend"><div><span class="legend-dot blue"></span><span>Cards</span><strong>64.8%</strong></div><div><span class="legend-dot purple"></span><span>Bank transfer</span><strong>21.4%</strong></div><div><span class="legend-dot teal"></span><span>Wallets</span><strong>9.6%</strong></div><div><span class="legend-dot gray"></span><span>Other</span><strong>4.2%</strong></div></div></div><button class="text-button">View payment breakdown <span>→</span></button></section>
+          </div>
+
+          <section class="glass-card transactions-card reveal"><div class="section-head"><div><h2>Recent transactions</h2><p class="muted">Your latest payment activity</p></div><div class="table-actions"><button class="button button-ghost small" id="filterButton">☷ Filter <span class="filter-count">2</span></button><button class="text-button">View all <span>→</span></button></div></div><div class="table-wrap"><table><thead><tr><th>Customer</th><th>Status</th><th>Date</th><th>Amount</th><th>Method</th><th></th></tr></thead><tbody><tr><td><span class="customer-cell"><span class="avatar avatar-orange">JD</span><span><strong>Jordan Davis</strong><small>jordan.davis@email.com</small></span></span></td><td><span class="status success">● Succeeded</span></td><td>Oct 12, 2026 <small>10:42 AM</small></td><td><strong>$2,450.00</strong></td><td><span class="method-icon visa">V</span> •••• 4242</td><td><button class="row-menu">•••</button></td></tr><tr><td><span class="customer-cell"><span class="avatar avatar-green">SO</span><span><strong>Studio Oak</strong><small>billing@studiooak.co</small></span></span></td><td><span class="status success">● Succeeded</span></td><td>Oct 12, 2026 <small>9:18 AM</small></td><td><strong>$890.00</strong></td><td><span class="method-icon bank">⌁</span> Bank transfer</td><td><button class="row-menu">•••</button></td></tr><tr><td><span class="customer-cell"><span class="avatar avatar-pink">MC</span><span><strong>Marina Chen</strong><small>marina.chen@email.com</small></span></span></td><td><span class="status pending">● Pending</span></td><td>Oct 11, 2026 <small>6:33 PM</small></td><td><strong>$1,200.00</strong></td><td><span class="method-icon apple">●</span> Apple Pay</td><td><button class="row-menu">•••</button></td></tr><tr><td><span class="customer-cell"><span class="avatar avatar-yellow">HF</span><span><strong>Horizon Films</strong><small>finance@horizonfilms.com</small></span></span></td><td><span class="status refunded">● Refunded</span></td><td>Oct 11, 2026 <small>2:14 PM</small></td><td><strong>$480.00</strong></td><td><span class="method-icon mastercard">◉</span> •••• 8891</td><td><button class="row-menu">•••</button></td></tr></tbody></table></div></section>
+
+          <section class="bottom-grid reveal"><article class="glass-card payout-card"><div class="section-head"><div><h2>Next payout</h2><p class="muted">Friday, October 16, 2026</p></div><span class="payout-status">Scheduled</span></div><div class="payout-amount">$18,420<span>.30</span></div><div class="progress-track"><span></span></div><div class="payout-meta"><span><small>Processing</small><strong>3 business days</strong></span><span><small>Destination</small><strong>•••• 2309</strong></span><span><small>Fees</small><strong>$42.80</strong></span></div></article><article class="glass-card insight-card"><div class="insight-glow"></div><span class="insight-icon">✦</span><div><p class="eyebrow">Kivora insight</p><h2>Your revenue is up 12.8% this month</h2><p class="muted">You’re on track to beat your previous monthly record by October 24.</p><button class="text-button">See growth report <span>→</span></button></div></article></section>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status"><span class="toast-check">✓</span><span id="toastText">Export ready to download</span></div>
+    <div class="modal-backdrop" id="paymentModal"><div class="modal glass-card"><button class="modal-close" id="closeModal">×</button><span class="modal-icon">＋</span><p class="eyebrow">Quick action</p><h2>Create a payment</h2><p class="muted">Start a secure payment request for a customer.</p><label>Customer email<input placeholder="customer@example.com" type="email" /></label><label>Amount<input placeholder="$ 0.00" inputmode="decimal" /></label><button class="button button-primary full" id="createPayment">Create payment link →</button></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
